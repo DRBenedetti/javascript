@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <label for="velocidade">Velocidade (km/h)</label>
+    <input type="number" name="velocidade" id="velocidade" required>
+    <input type="submit" value="Enviar" onclick="radar()">
+    <p id="resposta">RESPOSTA: </p>
+    <!--Todo o meu despreso ao DETRAN-->
+
+    <script>
+        function radar() {
+            var vel = window.document.getElementById('velocidade').value
+            var res = window.document.getElementById('resposta')
+            if (vel > 70) {
+                res.innerHTML = `MULTADO! sua velocidade é de ${vel}km/h`
+            }
+            else {
+                res.innerHTML = `Sua velocidade é de ${vel}km/h, dirija com cuidado.`
+            }
+        }
+    </script>
+</body>
+</html>
