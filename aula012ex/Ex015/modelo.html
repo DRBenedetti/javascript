@@ -8,18 +8,28 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
         <div>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati quo nostrum recusandae blanditiis eligendi labore illo officiis suscipit? Natus adipisci odit nam dolore tempora quod, distinctio animi doloribus sint in.
+            <label for="idade">Ano de Nascimento: </label>
+            <input type="number" name="idade" id="idade" required placeholder="Ex: 1993">
         </div>
         <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic, fuga quia facilis enim error ipsam nisi aut alias consectetur saepe, sapiente sed tempore minus. Consequuntur maxime repellendus animi officiis.
+            Sexo:
+            <input type="radio" name="isexo" id="feminino"> <label for="feminino">Masculino</label>
+            <input type="radio" name="isexo" id="masculino"> <label for="masculino">Feminino</label>
+        </div>
+        <div class="botão">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="resposta">
+            Preencha os dados acima para ver o resultado.
+            <img src="" alt="">
         </div>
     </section>
     <footer>
-        <p><a href="#">@diogo_benedetti</a></p>
+        <p><a href="#" target="_blank">@diogo_benedetti</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
