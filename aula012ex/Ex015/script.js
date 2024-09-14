@@ -3,7 +3,6 @@ function verificar() {
     var ano = dia.getFullYear()
     var nasc = document.getElementById('idade')
     var res = document.getElementById('resposta')
-    //resposta.innerHTML = `Resposta: ${calc}`
 
     if (nasc.value.length == 0 || nasc.value > ano) {
         window.alert('Verifique os dados e tente novamente. ')
