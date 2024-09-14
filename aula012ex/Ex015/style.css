@@ -66,6 +66,11 @@ section div {
 
 #resposta {
     margin-bottom: 0px;
+    text-align: center;
+}
+
+img {
+    margin-top: 15px;
 }
 
 footer {
